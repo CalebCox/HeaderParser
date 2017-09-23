@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 
     // set OS, IP Address, and Language variables
     var os = agent.os.toString();
-    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    var ip = req.headers['x-forwarded-for'].split(",")[0] || req.connection.remoteAddress;
     var language = req.headers["accept-language"].split(",")[0];
 
     // send acquired information as JSON

@@ -4,10 +4,20 @@
   "description": "FreeCodeCamp Request Header Parser project",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Caleb Cox",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CalebCox/HeaderParser.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "freecodecamp"
+  ],
   "dependencies": {
     "express": "^4.15.4",
     "useragent": "^2.2.1"
